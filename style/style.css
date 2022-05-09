@@ -188,6 +188,7 @@ textarea {
 
     /* Hacer coincidir los bordes del campo del formulario */
     border: 1px solid #999;
+    color: #000;
 }
 
 input:focus,
@@ -291,7 +292,7 @@ a.enlace {
     .carta_2,
     .carta_3 {
         font-size: 12px;
-        padding: 10px;
+        padding: 5px;
     }
 
     .grid {
@@ -366,7 +367,7 @@ a.enlace {
     .carta_2,
     .carta_3 {
         font-size: 12px;
-        padding: 10px;
+        padding: 5px;
     }
 
     .grid {
