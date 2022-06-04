@@ -5,54 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" href="img/combi en el colegio.png">
+    <link rel="icon" href="img/combi en el colegio.jpeg">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>zeznicbus
+    <title>ZezNicBus
     </title>
 </head>
 
 <body class="body">
+   
+    <!--boton flotante Whatsapp-->
+    <div id="whatsapp">
+        <a href="https://wa.me/+5491158455197?text=ꕥHola%20estoy%20interesado/a%20en%20su%20servicioꕥ"><img src="./img/flecha-hacia-whatsapp.png" alt="" id="flecha-hacia-whatsapp"></a>
+    </div>
     <!--boton flotante-->
     <div id="top">
-        <a href="index.html"><img src="./img/flecha-hacia-arriba (1).png" alt="" id="flecha-hacia-arriba"></a>
+        <a href="#top1"><img src="./img/flecha-hacia-arriba (1).png" alt="" id="flecha-hacia-arriba"></a>
     </div>
     <!--header-->
-    <header class="header">
-        <img class="logo" src="img/combi en el colegio.png" alt="logo" />
-    </header>   
-    
-        <nav id="navbar">
-           
-            <div id="navContent" class="navContent">
-                <ul>
-                    <li><a href="index.html">inicio</a></li>
-                    <li><a href="#sectionPresentacion">sobre nosotros</a></li>
-                    <li><a href="#nuestroclientesdicen">nuestros clientes</a></li>
-                    <li><a href="#zonaabarcada">zona abarcada</a></li>
-                    <li><a href="#contacto">contacto</a></li>
-                </ul>
-            
-            </div>
-        </nav>
-        
-   
+    <header id="top1"class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <nav class="navbar navbar-expand-lg navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="logo" src="img/combi en el colegio.jpeg" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav">
+                <li class="nav-item"><a href="index.html" class="nav-link color" aria-current="page">Inicio</a></li>
+                <li class="nav-item"><a href="#sectionPresentacion" class="nav-link">Sobre nosotros</a></li>
+                <li class="nav-item"><a href="#nuestroclientesdicen" class="nav-link">nuestros clientes</a></li>
+                <li class="nav-item"><a href="#zonaabarcada" class="nav-link">zona abarcada</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">contacto</a></li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--header-->
+     
     <!--main-content-->
     <main>
+        <div class="none">
+            <img src="img/combi.png" alt="" class="animationimg">
+        </div>
         <!--section1-->
-        <section class="sectionPresentacion" id="sectionPresentacion">
+        <section class="container sectionPresentacion" id="sectionPresentacion">
 
             <h1 id="titulo">Zeznicbus</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod iusto optio quis autem tenetur? Non
-                ab expedita earum unde eos ea assumenda excepturi officia nihil beatae cumque rem tenetur dolor magnam
-                culpa, cum, temporibus tempore doloribus neque. Natus, aut quisquam quis ut minima fugit eos modi?
-                Porro, mollitia soluta.</p>
+            <p><h3 class="subti">Quienes somos</h3>
+                Somos una empresa de transporte de pequeños viajeros, nos especializamos en traslado del domicilio hasta el lugar de aprendizaje, creatividad.
+                Contamos con experiencia de más de 12 años. Nos destacamos por el trabajo en equipo y el respeto entre otros. <br>
+                <h3 class="subti">Habilitación</h3>
+                Contamos con habilitación en el municipio de Florencio Varela 
+                Con todos los controles correspondientes, entre ellos desinfección por parte de bromatología, controles en los vehículos. <br/>
+                Somos Lucas, Miriam y Eze desde ya agradecemos la confianza y el apoyo brindado.</p>
 
         </section>
+
+        <!-- temporalmente innecesario))))
+            <div class="container   grid">
+        <div class="circulos"><p>Lorem </p></div>
+        <div class="circulos"><p>Lorem ipsum </p></div>
+        <div class="circulos"><p>Lorem ipsum dolor </p></div>
+        </div> --->
         <!--section2-->
+        <!--momentaneo
         <section class="sectionTable">
 
             <div class="grid" class="cartas_presentacion">
@@ -89,48 +111,24 @@
                 culpa, cum, temporibus tempore doloribus neque. Natus, aut quisquam quis ut minima fugit eos modi?
                 Porro, mollitia soluta.</p>
 
-        </section>
-        <section>
-
-        </section>
-        <!--section3-->
-        <section>
-
-        </section>
+        </section> -->
+       
         <br>
         <section class="grilla" id="nuestroclientesdicen">
 
             <h2>Nuestros clientes dicen de nosotros</h2>
-            <div class="grid">
+            <div class="container grid">
                 <div id="cliente1">
-                    <img src="img/cliente1.jpg" alt="cliente1" class="img">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod iusto optio quis autem
-                        tenetur? Non
-                        ab expedita earum unde eos ea assumenda excepturi officia nihil beatae cumque rem tenetur dolor
-                        magnam
-                        culpa, cum, temporibus tempore doloribus neque. Natus, aut quisquam quis ut minima fugit eos
-                        modi?
-                        Porro, mollitia soluta.</p>
-                </div>
+                    <img src="img/cliente1.jpg" alt="cliente1" class="img"><span></span>
+                    <p>"Muchas gracias <b>transporte escolar ZEZNIC</b> Por el compromiso, responsabilidad y por el cariño a nuestro hijo, desde primer grado junto a ustedes. Gracias!"</p>
+                </div> 
                 <div id="cliente2">
-                    <img src="img/cliente2.jpg" alt="cliente2" class="img">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod iusto optio quis autem
-                        tenetur? Non
-                        ab expedita earum unde eos ea assumenda excepturi officia nihil beatae cumque rem tenetur dolor
-                        magnam
-                        culpa, cum, temporibus tempore doloribus neque. Natus, aut quisquam quis ut minima fugit eos
-                        modi?
-                        Porro, mollitia soluta.</p>
+                    <img src="img/cliente2final.jpeg" alt="cliente2" class="img"><span></span>
+                    <p>"Super recomiendo <b>transporte escolar ZEZNIC</b>. Su calidez y buen trato para los alumnos es de destacar y las familias año a año confiamos en uds. Gracias!"</p>
                 </div>
                 <div id="cliente3">
-                    <img src="img/cliente3.jpeg" alt="cliente3" class="img">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod iusto optio quis autem
-                        tenetur? Non
-                        ab expedita earum unde eos ea assumenda excepturi officia nihil beatae cumque rem tenetur dolor
-                        magnam
-                        culpa, cum, temporibus tempore doloribus neque. Natus, aut quisquam quis ut minima fugit eos
-                        modi?
-                        Porro, mollitia soluta.</p>
+                    <img src="img/cliente3.jpeg" alt="cliente3" class="img"><span></span>
+                    <p>"El servicio de <b>transporte escolar ZEZNIC</b> siempre está realizado con compromiso, responsabilidad y sobretodo amor. Haciendo del viaje un espacio de charlas y risas. Cómo papás, hace 5 años, dejamos a nuestras hijas con total confianza en el traslado y cuidado de las mismas"</p>
                 </div>
             </div>
 
@@ -144,14 +142,11 @@
 
         </section>
         <br>
-        <section class="zonaabarcada" id="zonaabarcada">
+        <section class="container zonaabarcada" id="zonaabarcada">
             <h2>Zona abarcada</h2>
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=150XlhsEuD9IBz6zlh3YVFqAUa4CtXCoC&ehbc=2E312F"
-                width="400x" height="400px"></iframe>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod iusto optio quis autem tenetur? Non
-                ab expedita earum unde eos ea assumenda excepturi officia nihil beatae cumque rem tenetur dolor magnam
-                culpa, cum, temporibus tempore doloribus neque. Natus, aut quisquam quis ut minima fugit eos modi?
-                Porro, mollitia soluta.</p>
+                width="80%" height="400px"></iframe>
+            <p>Cruce Varela y alrededores.</p>
 
         </section>
         <!--section2-->
@@ -207,7 +202,16 @@
                 class="fa fa-whatsapp" aria-hidden="true"></i></a>
 
     </footer>
+    <footer class="footer-second">
+        <p class="logo_b">
+            &copy; <a target="_blank" href="https://www.instagram.com/zekecabre"><m>ZekeCabre</m></a>
+        </p>
 
+
+    </footer>
+    
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>

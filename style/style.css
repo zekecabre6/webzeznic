@@ -3,6 +3,7 @@ html {
 }
 
 * {
+    transition: all 0.3s;
     margin: 0;
     padding: 0;
     color: rgb(255, 255, 255);
@@ -13,10 +14,12 @@ html {
     text-decoration: none;
     box-sizing: border-box;
 }
+
 html,
 body {
     width: 100%;
 }
+
 .header {
     width: 100%;
 }
@@ -25,13 +28,23 @@ body {
     width: 100%;
 }
 
-    
+
 
 
 h2 {
     text-align: center;
 }
 
+/*boton flotante whatsapp*/
+#whatsapp{
+    position: fixed;
+    bottom: 100px;
+    right: 16px
+}
+#flecha-hacia-whatsapp {
+    max-width: 2em;
+    max-height: 2em;
+}
 /*boton flotante*/
 #top {
     position: fixed;
@@ -58,12 +71,19 @@ header {
     width: 100px;
     height: 100px;
     margin: auto;
+    border-radius: 20px;
 }
+.logo:hover
+    {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.1);
+    }
+
 
 
 #navContent {
     background-color: #CDB265;
-   
+
 }
 
 #navContent ul {
@@ -140,12 +160,39 @@ img {
     display: block;
     margin: auto;
     max-width: 300px;
-    max-height: 300px;
+    max-height: auto;
+}
+.subti{
+    font-size: 30px;
+    color: rgb(168, 86, 9);
 }
 
 
 
-
+/*footersecond*/
+.footer-second{
+    border-top: 1px solid rgb(0, 0, 0);
+    margin: 0;
+    height:80px;
+    background-color: #464646;
+    position: inherit;
+    bottom:0%
+}
+.footer-second p,.footer-second a{
+    
+color:#fff;
+font-size:100%;
+line-height:155%;
+text-align: center;}
+h5{
+    margin-left:20px;
+    background-color: #F2B3B3;
+    display: inline-flex
+}
+m{
+    font-size: 30px;
+    color: #000
+}
 
 
 
@@ -224,7 +271,7 @@ button {
 /*#region ------------------------mapa----------*/
 .zonaabarcada {
     text-align: center;
-    
+
 }
 
 
@@ -233,6 +280,7 @@ button {
 /*#endregion*/
 /*footer*/
 footer {
+    border-top: 1px solid #fff;
     text-align: center;
     font-size: 1.5em
 }
@@ -242,8 +290,10 @@ a.enlace {
     justify-content: center;
     align-items: center;
 }
+
 /*responsive celu*/
-@media screen and (max-width: 992px) {/*notebook*/
+@media screen and (max-width: 992px) {
+    /*notebook*/
 
     html,
     body {
@@ -258,7 +308,9 @@ a.enlace {
         width: 100%;
     }
 }
-@media screen and (max-width: 768px) {/*tablet*/
+
+@media screen and (max-width: 768px) {
+    /*tablet*/
 
     html,
     body {
@@ -292,7 +344,7 @@ a.enlace {
     .carta_2,
     .carta_3 {
         font-size: 12px;
-        padding: 10px;
+        padding: 5px;
     }
 
     .grid {
@@ -328,17 +380,37 @@ a.enlace {
     .grid {
         grid-gap: 2rem 0;
     }
+
     #flecha-hacia-arriba {
+        max-width: 3.5em;
+        max-height: 3.5em;
+    }
+    #flecha-hacia-whatsapp {
         max-width: 4em;
         max-height: 4em;
     }
 }
-@media screen and (max-width: 600px) {/*phone*/
 
+@media screen and (max-width: 600px) {
+    /*phone*/
+    .none{
+        display: none
+    }
     html,
     body {
         width: 100%;
     }
+
+    .nav {
+        display: inline;
+        
+    }
+    .container-fluid {
+        justify-content: center !important
+    }
+    
+        
+    
 
     .logo {
         margin: auto;
@@ -367,7 +439,7 @@ a.enlace {
     .carta_2,
     .carta_3 {
         font-size: 12px;
-        padding: 10px;
+        padding: 5px;
     }
 
     .grid {
@@ -403,11 +475,41 @@ a.enlace {
     .grid {
         grid-gap: 2rem 0;
     }
+
     #flecha-hacia-arriba {
         max-width: 4em;
         max-height: 4em;
     }
 }
-iframe{
 
+
+
+
+
+.nav-link {
+    color: #3b3a3a;
+    font-size: 18px
 }
+
+.color {
+    background-color: rgb(212, 179, 135);
+}
+div p{
+    padding: 10px
+}
+.none{
+    
+}
+.animationimg{
+    width:150px;
+    margin: 0;
+    position: relative;
+    animation-name: lay;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+  }
+  @keyframes lay {
+    
+    0%   { left:10%; }
+    100% { left:70%; }  }
